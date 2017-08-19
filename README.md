@@ -1,5 +1,10 @@
 # atarigrandchallenge
-Code and data for 'The Grand Atari Challenge dataset' paper
+Code and data for 'The Grand Atari Challenge dataset' [paper](https://arxiv.org/abs/1705.10998).
+
+
+Cite the Atari Grand Challenge dataset as:
+
+*V. Kurin, S. Nowozin, K. Hofmann, L. Beyer, and B. Leibe. The Atari Grand Challenge Dataset. arXiv preprint arXiv:1705.10998, 2017.*
 
 ## Data
 
@@ -8,12 +13,11 @@ There are several options for you:
 * [the whole dataset (screenshots + trajectories) for all five games](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/full.tar.gz)
 * [trajectories only for all five games](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/trajectories.tar.gz)
 * per-game screenshots+trajectories:
-
-  ** [Space Invaders](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/spaceinvaders.tar.gz)
-  ** [Q*bert](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/qbert.tar.gz)
-  ** [Ms. Pacman](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/mspacman.tar.gz)
-  ** [Video Pinball](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/pinball.tar.gz)
-  ** [Montezuma's Revenge](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/revenge.tar.gz)
+  * [Space Invaders](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/spaceinvaders.tar.gz)
+  * [Q*bert](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/qbert.tar.gz)
+  * [Ms. Pacman](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/mspacman.tar.gz)
+  * [Video Pinball](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/pinball.tar.gz)
+  * [Montezuma's Revenge](https://omnomnom.vision.rwth-aachen.de/data/atari_v1_release/revenge.tar.gz)
 
 ## Dataset API
 
@@ -44,12 +48,7 @@ all_trajectories = dataset.trajectories
 
 You can find more examples in the *notebooks* folder.
 
-
-Cite the Atari Grand Challenge dataset as:
-
-*V. Kurin, S. Nowozin, K. Hofmann, L. Beyer, and B. Leibe. The Atari Grand Challenge Dataset. arXiv preprint arXiv:1705.10998, 2017.*
-
-**P.S. **
+**P.S.**
 
 We've done some fixes after the initial release and removed the trajectories with final zero score from the data,
 so, we have smth like 3 hrs less of replays as we claimed in the paper.
