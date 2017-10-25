@@ -55,12 +55,14 @@ so, we have smth like 3 hrs less of replays as we claimed in the paper.
 Though, we already have enough data to release a second version, so, *dataset_v2* will be here soon.
 We plan to release the data and update the preprint after it.
 
+**upd:** v2 is released. Preprint update is in progress.
+
 **P.P.S**
 
 In case you found a bug or just in trouble, email me vitaliykurin@gmail.com =)
 
 
-## experimental code: TBD
+## experimental code: TDB
 
-## code for data collection: TBD
+## code for data collection: [here](https://github.com/yobibyte/atarigrandchallenge/tree/master/webapp)
 

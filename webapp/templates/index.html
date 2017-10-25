@@ -1,0 +1,84 @@
+<DOCTYPE html>
+<html>
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41793274 = new Ya.Metrika({ id:41793274, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41793274" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>'ATARI'</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+        <script type="text/javascript"> var replay = '{{replay}}'==='True';</script>
+        <script type="text/javascript"> var rom = '{{rom}}';</script>
+        <script type="text/javascript"> var ai_score = parseInt('{{ai_score}}');</script>
+        <script type="text/javascript"> var traj_id = '{{traj_id}}';</script>
+        <script type="text/javascript"> window.Javatari_IMAGES_PATH = '{{ url_for('static',filename='img/') }}';</script>
+        <script type="text/javascript"> var ROM_PATH = '{{ url_for('static',filename='roms/') }}';</script>
+        <script src="../static/js/javatari.js"></script>
+        <script src="../static/js/ui.js"></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"></style>
+    </head>
+
+    <body>
+      <div class="main-block-game">
+      <ul id="header">
+        <li class="game-selector">
+          <a class="game-link" id="qbert" href="/qbert">
+            <img src="../static/img/screens/qbert.png" alt="Q*bert">
+            <div class="caption">Q*bert</div>
+          </a>
+        </li>
+        <li>
+        <li>
+          <a class="game-link" id="pinball" href="/pinball">
+            <img src="../static/img/screens/pinball.png" alt="Video Pinball">
+            <div class="caption">Video Pinball</div>
+          </a>
+        </li>
+        <li>
+          <a class="game-link" id="mspacman" href="/mspacman">
+            <img src="../static/img/screens/pacman.png" alt="Ms. Pacman">
+            <div class="caption">Ms. Pacman</div>
+          </a>
+        </li>
+        <li>
+          <a class="game-link" id="spaceinvaders" href="/spaceinvaders">
+            <img src="../static/img/screens/spaceinvaders.png" alt="Space Invaders">
+            <div class="caption">Space Invaders</div>
+          </a>
+        </li>
+        <li>
+          <a class="game-link" id="revenge" href="/revenge">
+            <img src="../static/img/screens/montezuma.png" alt="Montezuma's revenge">
+            <div class="caption">Montezuma's Revenge</div></a>
+        </li>
+      </ul>
+      <br>
+      <div class="parent">
+        <div class="right">
+          <div class="score">
+            <div id="ai-score"></div>
+            <span id="ai-bar-text"></span>
+          </div>
+          <div class="score">
+            <div id="human-score"></div>
+            <span id="human-bar-text"></span>
+          </div>
+          <div id="controls">
+            <h2>Controls</h3>
+            <div id="game-desc"></div>
+          </div>
+        </div>
+        <div id="javatari-screen"></div>
+        <div>
+          <div id="reset">Start new game (or press F12)<br/></div>
+          <div id="sound-btn"></div>
+          <div id="about-btn"><a href="/about">About</a></div>
+        </div>
+      </div>
+    <div id="footer">
+      <p>Question? Problem? Idea? Write <a href="mailto:vitaliykurin@gmail.com">me</a> or find me <a href="https://github.com/yobibyte/yobiblog">here</a> =)</p>
+      <p>Java, Atari and Video Computer System are trademarks of their respective owners.</p>
+    </div>
+    </body>
+
+</html>

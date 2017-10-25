@@ -2,7 +2,6 @@ from os import path, listdir
 import numpy as np
 from scipy import stats as st
 import math
-
 class AtariDataset():
 
     TRAJS_SUBDIR = 'trajectories'
@@ -29,6 +28,7 @@ class AtariDataset():
         for g in self.trajectories.keys():
             self.stats[g] = {}
             nb_games = self.trajectories[g].keys()
+
             total_frames = sum([len(self.trajectories[g][traj]) for traj in self.trajectories[g]])
             final_scores = [self.trajectories[g][traj][-1]['score'] for traj in self.trajectories[g]]
 
@@ -61,10 +61,10 @@ class AtariDataset():
                             curr_trans['frame']    = int(curr_data[0])
                             curr_trans['reward']   = int(curr_data[1])
                             curr_trans['score']    = int(curr_data[2])
-                            curr_trans['terminal'] = int(curr_data[3]=='True')
+                            curr_trans['terminal'] = int(curr_data[3])
                             curr_trans['action']   = int(curr_data[4])
                             curr_traj.append(curr_trans)
-                        trajectories[game][int(traj.split('.txt')[0])] = curr_traj
+                trajectories[game][int(traj.split('.txt')[0])] = curr_traj
         return trajectories
                    
 

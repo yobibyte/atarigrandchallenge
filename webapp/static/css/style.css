@@ -1,0 +1,210 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  background-color: green;
+  vertical-align:center;
+  font-size:20px;
+  height:190px;
+}
+
+li {
+  float:left;
+  margin:10px;
+  text-align:center;
+}
+
+.caption {
+  margin-left:10px;
+
+}
+
+#header {
+  min-height:180px;
+}
+
+#slogan {
+  float: right;
+}
+
+h3 {
+  text-align:center;
+}
+
+h2 {
+  text-align:center;
+}
+
+h1 {
+  text-align:center;
+}
+
+body {
+  font-family:"Lucida Console", Monaco, monospace;
+  background-image: url(../img/background.png);
+  background-repeat:repeat;
+}
+
+#main {
+  overflow:hidden;
+  min-height:594px;
+}
+
+
+.score {
+  background-color:#FF9900;
+  height:45px;
+  margin-bottom:10px;
+  position:relative;
+  width:500px;
+  vertical-align:middle;
+}
+
+.score-text {
+  text-align:center;
+  vertical-align:middle;
+  width:100%;
+}
+
+#controls {
+  margin-top:0px;
+  height:370px;
+  width:500px;
+  background-color:#FF9900;
+}
+.parent {
+  overflow: hidden;
+}
+
+.right {
+  float: right;
+  height: 520px;
+}
+
+#javatari-screen {
+  overflow: hidden;
+  height: 594px;
+}
+
+#game-desc {
+  padding-left:10px;
+  padding-right:10px;
+  font-size:16px;
+  text-align:width;
+}
+
+#reset {
+  height:30px;
+  text-align:center;
+	font-size:20px;		
+	font-weight:bold;
+	float:left;
+	margin-right:10px;
+  background-color:green;
+	width:390px;
+	line-height: 30px;
+  background-color:#FF9900;
+}
+
+#about-btn {
+  text-align:center;
+	font-weight:bold;
+  height:30px;
+  width:90px;
+	font-size:20px;		
+	line-height: 30px;
+	float:left;
+  background-color:#FF9900;
+}
+
+#sound-btn {
+  text-align:center;
+	margin-right:10px;
+	font-weight:bold;
+  height:30px;
+  width:142px;
+	font-size:20px;		
+	line-height: 30px;
+	float:left;
+  cursor:pointer;
+  background-color:#FF9900;
+}
+
+#ai-score {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: green;
+}
+
+#human-score {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: green;
+}
+
+#ai-bar-text {
+	position:absolute;
+  display:table-cell;
+	left:29%;
+	top:25%;
+	width:100%;
+}
+
+#human-bar-text {
+	position:absolute;
+  display:table-cell;
+	left:10%;
+	top:25%;
+	width:100%;
+}
+
+.about {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+.main-block {
+	font-size:18;
+  padding: 10px;
+	margin: 0 auto;
+	width:1200px;
+	text-align:width;
+  background-color:#FF9900;
+}
+
+.main-block-mobile {
+	font-size:50;
+  padding: 20px;
+  background-color:#FF9900;
+}
+
+.main-block-game {
+  padding: 10px;
+	margin: 0 auto;
+	width:1220px;
+	text-align:width;
+}
+
+#go {
+	margin-top:10px;
+	margin-bottom:0px;
+	font-size:100;
+	text-align:center;
+}
+
+a {
+  color:black;
+}
+
+#footer {
+  text-align:center;
+  color:green;
+}
+
+#footer-mobile {
+  text-align:center;
+  color:green;
+  font-size:50px;
+}
